@@ -1,0 +1,1 @@
+{"parent":"header-group.json","context":{"market":"united-kingdom"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_9EVz4":{"type":"announcement","disabled":false,"settings":{"text":"Free shipping to the UK!","link":""}}},"block_order":["announcement-bar-0","announcement_9EVz4"]}},"order":["announcement-bar","header"]}

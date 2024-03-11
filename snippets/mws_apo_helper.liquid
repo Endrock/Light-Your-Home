@@ -1,0 +1,96 @@
+<script>
+function mwApoCustom() {
+    function getOptionName(id) {
+    if (typeof mwApoInit.response !== "undefined") {
+      for (const val of Object.values(mwApoInit.response)) {
+        for (const key in val.values) {
+          if (key == id) {
+            if ( typeof val.values[id].value.title !== "undefined") {
+              return val.values[id].value.title;
+            }
+          }
+        }
+      }
+    }
+  }
+  window.mwApoInit  = window.mwApoInit  || {};
+
+  window.mwApoInit.onEvent = function (event, args) {
+  if (event == "init::finish") {
+    if (document.querySelector(".shopify-payment-button")) {
+      document.querySelector(".shopify-payment-button").style.display = "none";
+    }
+
+          setTimeout(() => {
+          let options = document.querySelectorAll('option.mw-option__value.mw-text') 
+
+          options.forEach(function (item) {
+            let content = item.innerHTML;
+            let id = item.getAttribute('value');
+            if (id==='' || id.includes("Please Select")) {
+               item.remove();                          
+            }
+         });
+      }, 50);
+  }
+};
+
+  window.mwApoInit.onCallback = function (event, data) {
+     return data;
+  };
+  window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
+}
+</script>
+
+
+<style>
+  .mw-text.mw-text--style-strong{
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: calc(1 + .5 / var(--font-body-scale));
+    letter-spacing: .04rem;
+  }
+.mw-option .mw-option__control--type-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #d4d6d8;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cgo8ZGVmcz4KPC9kZWZzPgo8ZyBzdHlsZT0ic3Ryb2tlOiBub25lOyBzdHJva2Utd2lkdGg6IDA7IHN0cm9rZS1kYXNoYXJyYXk6IG5vbmU7IHN0cm9rZS1saW5lY2FwOiBidXR0OyBzdHJva2UtbGluZWpvaW46IG1pdGVyOyBzdHJva2UtbWl0ZXJsaW1pdDogMTA7IGZpbGw6ICMxMDM5NDg7IGZpbGwtcnVsZTogbm9uemVybzsgb3BhY2l0eTogMTsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNDA2NTkzNDA2NTkzNDAxNiAxLjQwNjU5MzQwNjU5MzQwMTYpIHNjYWxlKDIuODEgMi44MSkiID4KCTxwb2x5Z29uIHBvaW50cz0iNDUsNjkuNTIgMCwzMC4yNSA4LjUyLDIwLjQ4IDQ1LDUyLjMxIDgxLjQ4LDIwLjQ4IDkwLDMwLjI1ICIgc3R5bGU9InN0cm9rZTogbm9uZTsgc3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiBub25lOyBzdHJva2UtbGluZWNhcDogYnV0dDsgc3Ryb2tlLWxpbmVqb2luOiBtaXRlcjsgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOyBmaWxsOiAjMTAzOTQ4OyBmaWxsLXJ1bGU6IG5vbnplcm87IG9wYWNpdHk6IDE7IiB0cmFuc2Zvcm09IiAgbWF0cml4KDEgMCAwIDEgMCAwKSAiLz4KPC9nPgo8L3N2Zz4=");
+    background-size: 0.7em;
+    background-position: calc(100% - 17px) center;
+    background-repeat: no-repeat;
+  background-color: rgb(var(--color-background))!important;
+
+  cursor: pointer;
+    line-height: calc(1 + .6 / var(--font-body-scale));
+    padding: 14px calc(var(--inputs-border-width) + 3rem) 14px 2rem;
+    margin: var(--inputs-border-width);
+    min-height: calc(var(--inputs-border-width) * 2);
+
+  font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground),.75);
+}
+.mw-option .mw-option__control--type-select:hover {
+       box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground),var(--inputs-border-opacity));
+    outline: 0;
+    border-radius: var(--inputs-radius);
+
+}
+.mw-option .mw-option__control--type-select:focus{
+      box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+    outline: 0;
+    border-radius: var(--inputs-radius);
+}
+
+  .product-form__input.product-form__quantity{
+        margin: 30px 0;
+    
+  }
+
+</style>

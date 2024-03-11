@@ -1,0 +1,1 @@
+{"parent":"header-group.json","context":{"market":"canada"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_Jz6AD":{"type":"announcement","disabled":false,"settings":{"text":"Now Shipping to Canada!","link":""}}},"block_order":["announcement-bar-0","announcement_Jz6AD"]}},"order":["announcement-bar","header"]}
