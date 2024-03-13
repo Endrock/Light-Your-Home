@@ -1,1 +1,40 @@
-{"parent":"header-group.json","context":{"market":"canada"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_Jz6AD":{"type":"announcement","disabled":false,"settings":{"text":"Now Shipping to Canada!","link":""}}},"block_order":["announcement-bar-0","announcement_Jz6AD"]}},"order":["announcement-bar","header"]}
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "canada"
+  },
+  "sections": {
+    "announcement-bar": {
+      "settings": {
+        "auto_rotate": true
+      },
+      "blocks": {
+        "announcement_Jz6AD": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "text": "Now Shipping to Canada!",
+            "link": ""
+          }
+        },
+        "announcement_yEfRA": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "text": "Natural Oak & Gold Framed Canvases have import duty fees upon delivery!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement_Jz6AD",
+        "announcement_yEfRA"
+      ]
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
