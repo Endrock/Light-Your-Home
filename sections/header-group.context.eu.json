@@ -1,1 +1,0 @@
-{"parent":"header-group.json","context":{"market":"eu"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_ag3Pj":{"type":"announcement","disabled":false,"settings":{"text":"Free shipping to the EU!","link":""}}},"block_order":["announcement-bar-0","announcement_ag3Pj"]}},"order":["announcement-bar","header"]}

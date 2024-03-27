@@ -3499,3 +3499,16 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+/****************
+Sticky Top Ribbon
+*****************/
+.utility-bar{
+  width: 100%;
+  box-sizing: content-box;
+}
+.utility-bar .announcement-bar a{
+  color: #FFF;
+  text-decoration: none;
+}

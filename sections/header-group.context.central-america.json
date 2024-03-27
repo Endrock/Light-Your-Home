@@ -1,1 +1,0 @@
-{"parent":"header-group.json","context":{"market":"central-america"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_RcQcw":{"type":"announcement","disabled":false,"settings":{"text":"Now Shipping to Central America!","link":""}}},"block_order":["announcement-bar-0","announcement_RcQcw"]}},"order":["announcement-bar","header"]}

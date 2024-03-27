@@ -1,1 +1,0 @@
-{"parent":"header-group.json","context":{"market":"asia"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_7Kzym":{"type":"announcement","disabled":false,"settings":{"text":"Now Shipping to Asia!","link":""}}},"block_order":["announcement-bar-0","announcement_7Kzym"]}},"order":["announcement-bar","header"]}
