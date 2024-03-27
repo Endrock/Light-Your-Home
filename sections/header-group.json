@@ -5,7 +5,7 @@
     "announcement-bar-2v": {
       "type": "announcement-bar-2v",
       "blocks": {
-        "announcement_XcDeRP": {
+        "announcement_WrxhUq": {
           "type": "announcement",
           "settings": {
             "content": "<p>20% off code:spring20<\/p>"
@@ -13,7 +13,7 @@
         }
       },
       "block_order": [
-        "announcement_XcDeRP"
+        "announcement_WrxhUq"
       ],
       "settings": {
         "color_scheme": "inverse",
