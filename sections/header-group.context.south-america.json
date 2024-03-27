@@ -1,1 +1,8 @@
-{"parent":"header-group.json","context":{"market":"south-america"},"sections":{"announcement-bar":{"settings":{"auto_rotate":true},"blocks":{"announcement_fYPmD":{"type":"announcement","disabled":false,"settings":{"text":"Now Shipping to South America!","link":""}}},"block_order":["announcement-bar-0","announcement_fYPmD"]}},"order":["announcement-bar","header"]}
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "south-america"
+  },
+  "sections": {
+  }
+}
