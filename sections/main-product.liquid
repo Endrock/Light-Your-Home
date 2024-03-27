@@ -179,8 +179,9 @@
 
               
               {%- if product.description != blank -%}
+                <div class="receive-by" style="display:none">
                 {%- render 'receive-by' %}
-
+                </div>
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
