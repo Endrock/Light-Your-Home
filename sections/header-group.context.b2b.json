@@ -1,7 +1,7 @@
 {
   "parent": "header-group.json",
   "context": {
-    "market": "canada"
+    "b2b": true
   },
   "sections": {
   }

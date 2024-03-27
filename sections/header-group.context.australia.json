@@ -1,1 +1,8 @@
-{"parent":"header-group.json","context":{"market":"australia"},"sections":{"announcement-bar":{"settings":{"enable_country_selector":true},"blocks":{"announcement_XTp39":{"type":"announcement","disabled":false,"settings":{"text":"Now shipping to Australia!","link":""}}},"block_order":["announcement-bar-0","announcement_XTp39"]}},"order":["announcement-bar","header"]}
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "australia"
+  },
+  "sections": {
+  }
+}
