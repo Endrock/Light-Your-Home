@@ -4,5 +4,28 @@
     "market": "russia-norway"
   },
   "sections": {
-  }
+    "announcement-bar": {
+      "settings": {
+        "auto_rotate": true
+      },
+      "blocks": {
+        "announcement_MJ36w": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "text": "Now shipping internationally!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement_MJ36w"
+      ]
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
